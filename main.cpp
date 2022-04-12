@@ -4,8 +4,6 @@
 #include <csignal>
 #include <iostream>
 
-// TODO Залить на git сделав CI
-
 void signalHandler(int signum) {
    std::cout << "Interrupt signal (" << signum << ") received.\n";
    exit(signum);  
